@@ -1,6 +1,9 @@
 const pokemonName = document.querySelector('.pokemon_name');
 const pokemonNumber = document.querySelector('.pokemon_number');
 const pokemonImage = document.querySelector('.pokemon_image');
+const loading = document.querySelector('.loading');
+
+const hifen = document.querySelector('.hifen');
 
 const form = document.querySelector('.form');
 const input = document.querySelector('.input_search');
@@ -25,6 +28,9 @@ const renderPokemon = async (pokemon) => {
 
     loadingTimeout = setTimeout(() => {
         pokemonName.innerHTML = 'Carregando...';
+        pokemonNumber.innerHTML = '';
+        hifen.innerHTML = '';
+        loading.style.display = 'block';
     }, 300);
 
     const data = await fetchPokemon(pokemon);
@@ -38,10 +44,14 @@ const renderPokemon = async (pokemon) => {
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
         searchPokemon = data.id
         input.value = '';
+        hifen.innerHTML = '-';
+        loading.style.display = 'none';
     } else {
         pokemonName.innerHTML = 'Não encontrado';
         pokemonNumber.innerHTML = '';
         pokemonImage.style.display = 'none';
+        hifen.innerHTML = '';
+        loading.style.display = 'none';
     }
 }
 
