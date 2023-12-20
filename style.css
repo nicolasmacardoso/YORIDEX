@@ -97,11 +97,16 @@ main {
     color: white;
     background-color: #444;
     box-shadow: -2px 3px 0 #222, -4px 5px 0 #000;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+
 }
-
-
+.button:hover {
+    background-color: #555;
+    color: #fff;
+}
 
 .button:active {
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
+    transition: none; 
 }
