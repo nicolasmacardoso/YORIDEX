@@ -9,8 +9,19 @@
 
 body {
     text-align: center;
-    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    position: relative;
     min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #54b2ff70, #a2e2ff2a), url(images/background.png);
+    filter: blur(10px);
 }
 
 main {
