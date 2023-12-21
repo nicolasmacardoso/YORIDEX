@@ -39,10 +39,13 @@ const renderPokemon = async (pokemon) => {
 
     if (data) {
         pokemonImage.style.display = 'block';
-        pokemonName.innerHTML = data.name;
+        
+        const limitedName = data.name.length > 10 ? data.name.substring(0, 10) + '...' : data.name;
+        
+        pokemonName.innerHTML = limitedName;
         pokemonNumber.innerHTML = data.id;
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-        searchPokemon = data.id
+        searchPokemon = data.id;
         input.value = '';
         hifen.innerHTML = '-';
         loading.style.display = 'none';

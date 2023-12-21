@@ -1,0 +1,45 @@
+﻿[Arrow]
+Path=pikachu - normal.ani
+
+[IBeam]
+Path=pikachu - text.ani
+
+[AppStarting]
+Path=pikachu - work.ani
+
+[Hand]
+Path=pikachu - link2.ani
+
+[SizeAll]
+Path=pikachu - move.ani
+
+[No]
+Path=pikachu - unavailable.ani
+
+[UpArrow]
+Path=pikachu - alt.ani
+
+[Wait]
+Path=pikachu - busy.ani
+
+[SizeNWSE]
+Path=pikachu - d1.ani
+
+[SizeNESW]
+Path=pikachu - d2.ani
+
+[SizeWE]
+Path=pikachu - horizon.ani
+
+[SizeNS]
+Path=pikachu - vertic.ani
+
+[Help]
+Path=pikachu - help.ani
+
+[NWPen]
+Path=pikachu - handwriting.ani
+
+[Crosshair]
+Path=pikachu - precision.ani
+

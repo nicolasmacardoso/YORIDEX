@@ -11,6 +11,7 @@ body {
     text-align: center;
     position: relative;
     min-height: 100vh;
+    cursor: url('images/pikanormal.gif'), auto;
 }
 
 body::before {
@@ -86,6 +87,7 @@ main {
     color: #3a444d;
     font-size: clamp(8px, 5vw, 1rem);
     box-shadow: -3px 4px 0 #888, -5px 6px 0 #232323;
+    cursor: url('images/pikaDigitando.gif'), auto;
 }
 
 .buttons {
@@ -114,6 +116,7 @@ main {
 .button:hover {
     background-color: #555;
     color: #fff;
+    cursor: url('images/pikaclicando.gif'), auto;
 }
 
 .button:active {
