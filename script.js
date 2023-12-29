@@ -2,7 +2,7 @@ const pokemonName = document.querySelector('.pokemon_name');
 const pokemonNumber = document.querySelector('.pokemon_number');
 const pokemonImage = document.querySelector('.pokemon_image');
 const loading = document.querySelector('.loading');
-
+c
 const hifen = document.querySelector('.hifen');
 
 const form = document.querySelector('.form');
